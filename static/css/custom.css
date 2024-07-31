@@ -1,0 +1,11 @@
+/* Mengatur gambar logo */
+.brand-image {
+    border-radius: 0; /* Menghilangkan efek oval */
+    box-shadow: none; /* Menghilangkan bayangan */
+}
+
+/* Mengatur gambar profil pengguna */
+.user-panel .image img {
+    border-radius: 0; /* Menghilangkan efek oval */
+    box-shadow: none; /* Menghilangkan bayangan */
+}
