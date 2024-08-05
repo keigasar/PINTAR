@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Belajar Bersama IKND-AUI</title>
-    <link rel="stylesheet" href="css/adminlte.min.css">
-    <link rel="stylesheet" href="css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/overlayScrollbars.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css">
     <style>
         #pdf-container {
             width: 100%;
@@ -16,6 +16,13 @@
         canvas {
             display: block;
             margin: 0 auto;
+        }
+        .brand-image {
+            width: 40px; /* Atur ukuran logo */
+            height: auto; /* Memastikan rasio aspek tetap */
+        }
+        .nav-link {
+            padding-left: 15px; /* Menambahkan padding kiri */
         }
     </style>
 </head>
@@ -34,8 +41,8 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="#" class="brand-link">
-                <img src="images/user.jpg" alt="User Image" class="brand-image img-circle elevation-3">
-                <span class="brand-text font-weight-light">Nurul Desyana Rahman</span>
+                <img src="images/KSS Logo.png" alt="Website Logo" class="brand-image img-fluid elevation-3" style="opacity: .8;">
+                <span class="brand-text font-weight-light">Portal Belajar</span>
             </a>
             <div class="sidebar">
                 <nav class="mt-2">
@@ -47,20 +54,20 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-book"></i>
+                            <a href="modus_operandi.html" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
                                 <p>Modus Operandi</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-file"></i>
+                                <i class="nav-icon fas fa-book"></i>
                                 <p>Bahan KSS</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-ellipsis-h"></i>
+                                <i class="nav-icon far fa-plus-square"></i>
                                 <p>Lainnya</p>
                             </a>
                         </li>
@@ -81,47 +88,12 @@
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/adminlte.min.js"></script>
-    <script src="js/pdf.js"></script>
-    <script src="js/pdf.worker.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="#" class="brand-link">
-        <img src="images/user.jpg" alt="User Image" class="brand-image img-circle elevation-3">
-        <span class="brand-text font-weight-light">Nurul Desyana Rahman</span>
-    </a>
-    <div class="sidebar">
-        <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-item">
-                    <a href="#" class="nav-link" onclick="showDashboard()">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>Modus Operandi</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>Bahan KSS</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-ellipsis-h"></i>
-                        <p>Lainnya</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</aside>
