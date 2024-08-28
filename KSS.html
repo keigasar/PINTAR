@@ -121,8 +121,8 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            fetchFiles('D:/Aplikasi/Python/OFFICE/IKND/Best_Practice/AKBP/pdfs/KSS/Pemeriksaan', 'pemeriksaanDropdown');
-            fetchFiles('D:/Aplikasi/Python/OFFICE/IKND/Best_Practice/AKBP/pdfs/KSS/Non Pemeriksaan', 'nonPemeriksaanDropdown');
+            fetchFiles('pdfs/KSS/Pemeriksaan', 'pemeriksaanDropdown');
+            fetchFiles('pdfs/KSS/Non Pemeriksaan', 'nonPemeriksaanDropdown');
         });
 
         function fetchFiles(directory, dropdownId) {
@@ -152,7 +152,7 @@
                     'pdfs/KSS/Pemeriksaan/' : 
                     'pdfs/KSS/Non Pemeriksaan/';
                 const filePath = directory + selectedFile;
-                pdfViewer.src = `file:///${filePath}`;
+                pdfViewer.src = filePath;
             } else {
                 pdfViewer.src = '';
             }
