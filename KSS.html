@@ -149,8 +149,8 @@
 
             if (selectedFile) {
                 const directory = type === 'pemeriksaan' ? 
-                    'D:/Aplikasi/Python/OFFICE/IKND/Best_Practice/AKBP/pdfs/KSS/Pemeriksaan/' : 
-                    'D:/Aplikasi/Python/OFFICE/IKND/Best_Practice/AKBP/pdfs/KSS/Non Pemeriksaan/';
+                    'pdfs/KSS/Pemeriksaan/' : 
+                    'pdfs/KSS/Non Pemeriksaan/';
                 const filePath = directory + selectedFile;
                 pdfViewer.src = `file:///${filePath}`;
             } else {
