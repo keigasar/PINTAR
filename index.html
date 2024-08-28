@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Belajar Bersama IKND-AUI</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body, .wrapper, .content-wrapper, .content, .container-fluid {
             height: 100vh;
@@ -62,9 +61,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://edrive.bpk.go.id/my/PINTAR/SitePages/Home.aspx" target="_blank" class="nav-link">
+                            <a href="KSS.html" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>Bahan KSS</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://bpkgoid.sharepoint.com/sites/PINTAR/SitePages/Employee-onboarding-team-home.aspx" target="_blank" class="nav-link">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>Portal Internal</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -93,8 +98,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script>
+        // Redirect to login if not logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html'; // Redirect to login.html if not logged in
+        }
+    </script>
 </body>
 </html>
