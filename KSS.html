@@ -72,7 +72,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://bpkgoid.sharepoint.com/sites/PINTAR/SitePages/Employee-onboarding-team-home.aspx" target="_blank" class="nav-link">
+                            <a href="https://portal.bpk.go.id/sites/aui/kms/Pages/default.aspx" target="_blank" class="nav-link">
                                 <i class="nav-icon fas fa-external-link-alt"></i>
                                 <p>Portal Internal</p>
                             </a>
@@ -81,6 +81,12 @@
                             <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-plus-square"></i>
                                 <p>Lainnya</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="logout()">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Log Out</p>
                             </a>
                         </li>
                     </ul>
@@ -129,9 +135,9 @@
             // Simulasi file yang ada di direktori, ini harus diubah untuk menyesuaikan dengan file sebenarnya
             let files = [];
             if (dropdownId === 'pemeriksaanDropdown') {
-                files = ["Pemeriksaan_1.pdf", "Pemeriksaan_2.pdf", "Pemeriksaan_3.pdf", "Pemeriksaan_4.pdf"];
+                files = ["FRAUDULENT FINANCIAL STATEMENT.pdf", "LETTER OF CREDIT.pdf", "MODUS OPERANDI KASUS PERBANKAN.pdf", "PROSES KREDIT RED FLAG DAN MODUS DALAM PEMERIKSAAN KREDIT.pdf"];
             } else if (dropdownId === 'nonPemeriksaanDropdown') {
-                files = ["Non-Pemeriksaan_1.pdf", "Non-Pemeriksaan_2.pdf", "Non-Pemeriksaan_3.pdf", "Non-Pemeriksaan_4.pdf"];
+                files = ["BENTUK-BENTUK JAMINAN YANG BERLAKU DI INDONESIA.pdf", "INVESTASI PADA BATU BARA.pdf", "UPAYA MITIGASI RISIKO HUKUM DALAM PEROLEHAN BUKTI.pdf", "UU PT DAN PENGAMBILALIHAN PT.pdf", "VALUASI KERUGIAN LINGKUNGAN HIDUP.pdf"];
             }
             const dropdown = document.getElementById(dropdownId);
             files.forEach(file => {

@@ -10,6 +10,12 @@
         .container {
             padding: 20px;
         }
+        .sub-title {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
         .box {
             width: 23%; /* 4 boxes in a row */
             margin: 10px;
@@ -65,15 +71,27 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="KSS.html" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>Bahan KSS</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://portal.bpk.go.id/sites/aui/kms/Pages/default.aspx" target="_blank" class="nav-link">
+                                <i class="nav-icon fas fa-external-link-alt"></i>
+                                <p>Portal Internal</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-plus-square"></i>
                                 <p>Lainnya</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="logout()">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Log Out</p>
                             </a>
                         </li>
                     </ul>
@@ -86,6 +104,9 @@
             <section class="content">
                 <div class="container">
                     <h1>Modus Operandi</h1>
+
+                    <!-- Sub Judul Pertama -->
+                    <div class="sub-title">Berdasarkan Putusan Pengadilan</div>
                     <div class="box" onclick="window.location.href='dokumen.html?category=01'">
                         <img src="images/pendanaan_modal.png" alt="Dana Penyertaan Modal">
                         <div class="text">Dana Penyertaan Modal</div>
@@ -109,6 +130,34 @@
                     <div class="box" onclick="window.location.href='dokumen.html?category=06'">
                         <img src="images/lainnya.png" alt="Lainnya">
                         <div class="text">Lainnya</div>
+                    </div>
+
+                    <!-- Sub Judul Kedua -->
+                    <div class="sub-title">Berdasarkan Hasil Pemeriksaan</div>
+                    <!-- Kode untuk konten di bawah sub judul kedua akan ditambahkan nanti -->
+                    <div class="box" onclick="window.location.href='dokumen.html?category=07'">
+                        <img src="images/pengelolaan_kas.png" alt="Pengelolaan_Kas">
+                        <div class="text">Pengelolaan Kas</div>
+                    </div>
+                    <div class="box" onclick="window.location.href='dokumen.html?category=08'">
+                        <img src="images/pengeluaran.png" alt="Pengeluaran_Belanja">
+                        <div class="text">Pengeluaran/Belanja</div>
+                    </div>
+                    <div class="box" onclick="window.location.href='dokumen.html?category=09'">
+                        <img src="images/efek.png" alt="Penyertaan_Modal">
+                        <div class="text">Penyertaan Modal</div>
+                    </div>
+                    <div class="box" onclick="window.location.href='dokumen.html?category=10'">
+                        <img src="images/kredit.png" alt="Kredit">
+                        <div class="text">Perkreditan</div>
+                    </div>
+                    <div class="box" onclick="window.location.href='dokumen.html?category=11'">
+                        <img src="images/BumDes.png" alt="BUMDES">
+                        <div class="text">Badan Usaha Milik Desa</div>
+                    </div>
+                    <div class="box" onclick="window.location.href='dokumen.html?category=12'">
+                        <img src="images/pengadaan2.png" alt="Pengadaan">
+                        <div class="text">Pengadaan Barang dan Jasa</div>
                     </div>
                 </div>
             </section>

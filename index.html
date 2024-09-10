@@ -78,6 +78,13 @@
                                 <p>Lainnya</p>
                             </a>
                         </li>
+                        <!-- Tambahkan tombol logout di bawah menu Lainnya -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="logout()">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Log Out</p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -102,6 +109,11 @@
         // Redirect to login if not logged in
         if (!localStorage.getItem('loggedIn')) {
             window.location.href = 'login.html'; // Redirect to login.html if not logged in
+        }
+
+        function logout() {
+            localStorage.removeItem('loggedIn'); // Hapus status login
+            window.location.href = 'login.html'; // Arahkan pengguna ke halaman login
         }
     </script>
 </body>
