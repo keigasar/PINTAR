@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Belajar Bersama IKND-AUI</title>
+    <title>Prosedur Permintaan PI/PKN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
@@ -20,10 +20,13 @@
         .nav-link {
             padding-left: 15px; /* Menambahkan padding kiri */
         }
-        .landing-page-img {
-            width: 100%;
+        .empty-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 100%;
-            object-fit: cover;
+            color: #aaa; /* Warna teks placeholder */
+            font-size: 24px; /* Ukuran font teks placeholder */
         }
     </style>
 </head>
@@ -49,7 +52,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="#" class="nav-link" onclick="showDashboard()">
+                            <a href="index.html" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>Dashboard</p>
                             </a>
@@ -101,7 +104,9 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <img src="images/Landing Page.png" alt="Landing Page" class="img-fluid landing-page-img">
+                    <div class="empty-content">
+                        Konten akan ditampilkan di sini.
+                    </div>
                 </div>
             </section>
         </div>
