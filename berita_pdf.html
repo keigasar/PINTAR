@@ -143,23 +143,60 @@
         const category = params.get('category');
         const documents = {
             '01': [
-                'Investasi Bodong menggunakan Dana Penyertaan Modal Pemerintah Daerah.pdf',
-                'Kerja Sama Pengalihan Hak Pengelolaan dan Pemanfaatan Gas Bumi Bagian Negara.pdf',
-                'Penggunaan Realokasi PMD.pdf',
-                'Penyalahgunaan Dana penyertaan Modal BUMD_ PD KAK.pdf',
-                'Penyalahgunaan Dana Penyertaan Modal BUMD_1.pdf',
-                'Penyalahgunaan Dana Penyertaan Modal BUMD_2.pdf',
-                'Penyalahgunaan Dana Penyertaan Modal BUMD_3.pdf',
-                'Penyalahgunaan Dana Penyertaan Modal BUMD_4.pdf',
-                'Penyalahgunaan Dana Penyertaan Modal BUMD_5.pdf',
+                '20180125_PDAM Tirta Naga Tapaktuan_Bupati Hendaknya Tak Dengar Laporan Sepihak.pdf',
+                '20180125_PDAM Tirta Naga Tapaktuan_Sudah Empat Kali Ganti Direktur, Sama Indra Mengaku Trauma dengan PDAM Tirta Naga.pdf',
+                '20190514_PDAM Tirta Singkil_Karyawan Protes Pemkab Asal Pilih Dirut PDAM Tirta Singkil.pdf',
+                '20190710_PDAM Tirta Mon Krueng Baro_Sejak Berdiri, Akumulasi Kerugian PDAM Tirta Mon Krueng Baro di atas Rp30 M.pdf',
+                '20190825_NAD_PDAM Gunong Kila_Ini Sejumlah Kasus PDAM Gunong Kila yang Sedang Diselidiki Kejari Abdya.pdf',
+                '20200608_PT BPR Syariah Mustaqim Aceh_Pendapatan BPR Syariah Mustaqim Anjlok Selama 5 Tahun Terakhir dan Jarang Mendapatkan Sorotan Publik.pdf',
+                '20200826_NAD_PDAM Gunong Kila_PDAM Gunong Kila Minta Rp 15 M Lagi.pdf',
+                '20201113_PDAM Tirta Tamiang_Kasus PDAM Tirta Tamiang Bergulir, Jaksa Periksa Sekda.pdf',
+                '20211214_PDAM Tirta Tamiang_Kejari Lidik Kembali Kasus Dugaan Korupsi PDAM Tirta Tamiang.pdf',
+                '20220121_PT Gayo Lues Mentalu Perkasa_BUMD PT GLMP Mati Suri, Begini Penjelasan Sekda Gayo Lues.pdf',
+                '20220124_PD Makmur Sepakat_BUMD PD Makmur Sepakat Mati Suri, Tak Didugung Suntikan dana dari Pemkab Agara.pdf',
+                '20220419_PDAM Tirta Daroy_Ini kata Dirut PDAM Tirta Daroy Soal Dugaan Praktik Nepotisme Kakek Cucu.pdf',
+                '20220521_NAD_PDAM Gunong Kila_Kerugian PDAM Gunong Kila Abdya Capai Rp 29 Miliar.pdf',
+                '20220528_PDAM Tirta Aneuk Laot_Direktur PDAM Tirta Aneuk Laot perlu Konfirmasi Bagian Keuangan terkait Akumulasi Kerugian yang Mencapai Rp26,7 M lebih.pdf',
+                '20220911_PD Pase Energi_Sudah Dapat Penyertaan Modal Puluhan Miliar Rupiah, 3 BUMD di Aceh Tetap Merugi.pdf',
+                '20220911_PDAM Tirta Mon Pase_Sudah Dapat Penyertaan Modal Puluhan Miliar Rupiah, 3 BUMD di Aceh Tetap Merugi.pdf',
+                '20220911_PT BPR Aceh Utara_Sudah Dapat Penyertaan Modal Puluhan Miliar Rupiah, 3 BUMD di Aceh Tetap Merugi.pdf',
+                '20221103_PDAM Tirta Daroy_Karyawan Tirta Daroy Jadi Tersangka Kasus Dugaan Korupsi Pengadaan Tawas.pdf',
+                '20230103_PDAM Tirta Mon Pase_Dicecar Pertanyaan Rangkap Jabatan, Ketua Dewas PDAM Tirta Mon Pasee Beri Jawaban Berbelit - Belit.pdf',
+                '20230409_PDAM Tirta Agara Kutacane_Diduga Sewakan Aset Perusahaan, Pj Bupati Aceh Tenggara Diminta Copot Direktur PDAM Tirta Kutacane.pdf',
+                '20230409_PDAM Tirta Agara Kutacane_Kejari Kutacane Diminta Usut Dana Hibah Pemda ke PDAM Tirta Agara.pdf',
+                '20230605_PDAM Tirta Mon Krueng Baro_PDAM Tirta Mon Krueng Baro Pidie Rugi Tahun 2022 Rp4,1 M dan 201 Rp4,3 M.pdf',
+                '20230606_PD Kabupaten Simeulue_Auditor Independen Tolak Menyatakan Opini atas Laporan Keuangan PDKS.pdf',
+                '20230606_PD Kabupaten Simeulue_Kebun Kelapa Sawit Milik PDKS Dipihak Ketigakan.pdf',
+                '20230606_PDAM Tirta Fulawan_PDAM Tirta Fulawan Sumeulue Rugi Rp31,6 m Selama Beroperasi.pdf',
+                '20230610_PDAM Tirta Tawar_PDAM Tirta Tawar Aceh Tengah dalam Pusaran Masalah.pdf',
+                '20230822_PDAM Ie Beusaree Rata_Sejak 2014-2022, PDAM Lhokseumawe Rugi Capai Rp32,9 M.pdf',
+                '20231009_PDAM Tirta Peusda Aceh Timur_Pegawai PDAM Aceh Timur Minta Pejabat Direktur Dicopot.pdf',
+                '20231102_BPRS Kota Juang Birueun_Jaksa Tetapkan Tiga Tersangka dalam Kasus Korupsi PT BPRS Bireuen.pdf',
+                '20231113_BPRS Kota Juang Birueun_Kejari Bireuen periksa 58 saksi kasus dugaan korupsi BPRS.pdf',
+                '20231117_PDAM Tirta Krueng Meureudu_Bekas Dirut PDAM Tirta Krueng Meureudu Dijebloskan ke Penjara.pdf',
+                '20231120_PD Pembangunan Sabang_Ungkap Kasus Dugaan Korupsi PT PSM Kejari Sabang Geledah Kantor BPKD dan Ruang Kerja Kabag Perekonomian.pdf',
+                '20231220_PDAM Tirta Keumueneng_Dugaan Korupsi di PDAM Langsa, Kajari periksa Direktur PDAM, Yara Langsa Desak Kajari Segera Tetapkan Tersangka.pdf',
+                '20240112_PD Pembangunan Sabang_Bidik Tersangka Dugaan Korupsi Penyertaan Modal BUMD, Kejari Sabang Aceh Periksa 16 Saksi.pdf',
+                '20240118_PDAM Tirta Sejuk_Aktivits Desak Penegak Hukum Selisik Dugaan Penyimpangan Hibah 1 Milyar ke PDAM Tirta Sejuk.pdf',
+                '20240125_PT Wajar Corpora_Masyarakat Aceh Timur Demo Kejari Tuntut Kejaksaan Usut Korupsi.pdf',
+                '20240207_PT Wajar Corpora_Faksi Desak Penegakan Hukum, Usut PT Wajar Corpora.pdf'
             ],
             '02': [
-                'Kontrak Fiktif_PDAM Kab. Jepara.pdf',
-                'PBJ - Pengalihan Kontrak, Kekurangan Volume.pdf',
-                'PBJ - Tidak Mencairkan Jaminan UM dan Pelaksanaan.pdf',
-                'Pengaturan Lelang.pdf',
-                'Penyimpangan Perbaikan Kulitas dan Penyelesaian Komoditas Pangan Turun Mutu.pdf',
-                'Rekayasa Kontrak Pengadaan Boiler Unit 4 PLTU.pdf',
+                '2020_Dugaan Korupsi PDAM Tirtanadi Bulian, KPPK Kembali Datangi Kejatisu - HARIAN MISTAR.pdf',
+                '2020_Dugaan Korupsi, Aktivis Bakal Polisikan PDAM Tirta Bulian - PONTAS.ID.pdf',
+                '2022_Dugaan KKN Direktur PDAM Tirta Bulian Tebingtinggi Akan Dilaporkan ke APH _ Metro Online.pdf',
+                '2023_Direktur PDAM Tirta Bulian Kota Tebing Tinggi Diduga Merampok Uang Masyarakat Dengan Memperkaya Diri Sendiri _ RADAR NUSANTARA NEWS.pdf',
+                'Aksi Demontrasi di Acara KPK di Langkat, Kompak Minta Tarsangkakan Dirut PDAM Tirta Wampu - TOPMETRO NEWS.pdf',
+                'BPD PT Bank Sumut',
+                'Bupati Batubara Diminta Copot Direktur PDAM Tirtatanjung _ WASPADA.pdf',
+                'Di Duga PT TSM Manipulasi Data Hingga Kerugian Negara Milyaran, Kejari Tapsel Harus Tegas dan Transparan.pdf',
+                'Diduga Korupsi Rp 1,4 M, Eks Pejabat PD Pasar Medan Jadi Tersangka.pdf',
+                'Direksi PD RPH Medan Berkecamuk, Tones Gultom Laporkan Isfan , Ainal dan Noviza ke Polisi dan Kejaksaan - ORBITDIGITALdaily.pdf',
+                'Direktur PUDAM Tirta Bina Labuhanbatu Dilaporkan ke Kejaksaan, Diduga Lakukan Tindak Korupsi.pdf',
+                'Dugaan Korupsi di PDAM Tirtauli, Kasi Pidsus Kejaksaan_ Sedang Kita Teliti.pdf',
+                'Diduga ada Kejanggalan Pengelolaan Keuangan PDAM Langkat.pdf',
+                'PDI-P Diminta Kembalikan Puluhan Miliar Rupiah pada Masyarakat dari Kasus Dugaan Korupsi PDAM Langkat.pdf',
+                'Permasalahan Pengelolaan Keuangan PDAM Mataram Yang Diduga Berdampak pada Kerugian Negara.pdf'
             ],
             '03': [
                 'Pendapatan Subsidi - KegiatanPenerima Manfaat Fiktif.pdf',
@@ -224,7 +261,7 @@
         });
 
         function showPDF(file) {
-            const filePath = `pdfs/${category}/${file}`;
+            const filePath = `pdfs/Pemberitaan/${category}/${file}`;
             $('#pdf').attr('src', filePath);
             $('#pdf-container').show();
         }
